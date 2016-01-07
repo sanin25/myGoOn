@@ -1,4 +1,5 @@
 <meta http-equiv='Content/Type' content="text/html" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
             <!--Подключение стилей  -->
                 <?if(isset($styles)):?>
                  <?foreach($styles as $style):?>
@@ -10,15 +11,18 @@
                   <?= html::script($script)?>
                    <?endforeach?>
                     <?endif?> 
+           <body>         
+                    
+                     
     <div class="container">
         <div class="row">
             
-            <div class="col-md-6">
-                    <img src="/media/img/logo.png" alt="альтернативный текст">
+            <div class="col-md-6 animated slideInLeft">
+                    <img src="/media/img/logo.png" alt="ферма эко логотип">
                    
             </div>
-            
-            <div class="col-md-6  center-block search-top form">
+            <!--header -->
+            <div class="col-md-3  center-block search-top form animated slideInRight">
                 <?if(isset($search)):?>
                 <?foreach($search as $seaech):?>
                 <?= $seaech ?>
@@ -28,14 +32,17 @@
 
             </div>
             </div>
-            <div class='menu-top'>
+        <div class="row">
+            <div class="col-md-12 animated shake">
             <!--Меню-->
             <?if(isset($menu_top)):?>
            <?foreach($menu_top as $menu_top):?>
                         <?=$menu_top?>
            <?endforeach?>
            <?endif?> 
-           </div>
+           
+            </div>
+            </div>
        
         <div class="left"></div>
         <div class="center">
@@ -55,6 +62,6 @@
         
         
     </div>
-
+</body>
 
 

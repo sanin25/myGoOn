@@ -11,14 +11,22 @@
                    <?endforeach?>
                     <?endif?> 
     <div class="container">
-        <div class="header">
-            <div class="search-top">
-                <!--Поиск-->
+        <div class="row">
+            
+            <div class="col-md-6">
+                    <img src="/media/img/logo.png" alt="альтернативный текст">
+                   
+            </div>
+            
+            <div class="col-md-6  center-block search-top form">
                 <?if(isset($search)):?>
-                    <?foreach($search as $seaech):?>
-                        <?=$seaech?>
-                    <?endforeach?>
-                    <?endif?> 
+                <?foreach($search as $seaech):?>
+                <?= $seaech ?>
+                <?endforeach?>
+                <?endif?> 
+
+
+            </div>
             </div>
             <div class='menu-top'>
             <!--Меню-->
@@ -28,7 +36,7 @@
            <?endforeach?>
            <?endif?> 
            </div>
-        </div>
+       
         <div class="left"></div>
         <div class="center">
            

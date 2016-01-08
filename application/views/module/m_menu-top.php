@@ -5,7 +5,7 @@
     <ul>
     <?foreach ($name as $name):?>
                             
-    <li><a href="<?=$name->href?>.html"><?=$name->title?></a></li>
+    <li class="tv"><a  href="<?=$name->href?>.html"><?=$name->title?></a></li>
     
     <?endforeach?>
     </ul>
@@ -13,3 +13,4 @@
    <?endforeach?>
 </ul>
                      
+ 

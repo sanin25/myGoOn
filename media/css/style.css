@@ -24,12 +24,16 @@ html, body {
     background: linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 27%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 72%, rgba(254,254,254,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
 }
+.logo{
+	margin: 0px 0px -35px 0;
+	z-index: 2;
+}
 .sun{
     width: 450px;
-    float: right;
-    margin: -190px -170px 0px 1000px;
+    float: left;
+    margin: -190px 0px 0px -300px;
     z-index: 1;
-    position: relative;
+    position: absolute;
     
 }
 .search-top{
@@ -76,10 +80,11 @@ html, body {
         -webkit-border-radius: 12px 12px 12px 12px;*/
         border-bottom:  1px solid rgba(99, 206, 18, 0.83);
         display: block;
+       
         
 }
 #nav > li{
-	
+	 z-index: 5;
 	position:relative;
 	display:block;
 	float: left;

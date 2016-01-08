@@ -11,21 +11,25 @@
                   <?= html::script($script)?>
                    <?endforeach?>
                     <?endif?> 
-           <body>         
-                    
-                     
+           <body>              
     <div class="container">
         <div class="row">
-            
-            <div class="col-md-6 animated slideInLeft">
-                    <img src="/media/img/logo.png" alt="ферма эко логотип">
+            <img class="sun" src="/media/img/sun.png" alt="ферма эко логотип">
+            <div class="col-md-6 col-xs-3 animated slideInLeft logo">
+                    <img src="/media/img/logo4.png" alt="ферма эко логотип">
                    
             </div>
             <!--header -->
-            <div class="col-md-3  center-block search-top form animated slideInRight">
+            <div class="col-md-3 col-xs-2 center-block search-top form animated slideInRight">
                 <?if(isset($search)):?>
                 <?foreach($search as $seaech):?>
                 <?= $seaech ?>
+                <?endforeach?>
+                <?endif?>
+                
+                 <?if(isset($corusel)):?>
+                <?foreach($corusel as $corusel):?>
+                <?= $corusel ?>
                 <?endforeach?>
                 <?endif?> 
 
@@ -33,7 +37,7 @@
             </div>
             </div>
         <div class="row">
-            <div class="col-md-12 animated shake">
+            <div class="col-md-12 ">
             <!--Меню-->
             <?if(isset($menu_top)):?>
            <?foreach($menu_top as $menu_top):?>

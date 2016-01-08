@@ -48,8 +48,5 @@ $(document).ready(function() {
         ///topMenu
         
        
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-    });
 
 });

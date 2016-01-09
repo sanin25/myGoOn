@@ -15,17 +15,16 @@
     <div class="container">
         <div class="row">
             <img class="sun" src="/media/img/sun.png" alt="ферма эко логотип">
-            <div class="col-md-6 col-xs-3 animated slideInLeft logo">
+            
+            <img class="ptic" src="/media/img/ptic.png" alt="ферма эко логотип">
+                
+            <div class="col-md-4 col-xs-3 animated slideInLeft logo">
                     <img src="/media/img/logo4.png" alt="ферма эко логотип">
                    
             </div>
             <!--header -->
-            <div class="col-md-3 col-xs-2 center-block search-top form animated slideInRight">
-                <?if(isset($search)):?>
-                <?foreach($search as $seaech):?>
-                <?= $seaech ?>
-                <?endforeach?>
-                <?endif?>
+            <div class="col-md-8 col-xs-6 center-block  form animated slideInRight">
+               
                 
                  <?if(isset($corusel)):?>
                 <?foreach($corusel as $corusel):?>

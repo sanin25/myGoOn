@@ -35,8 +35,9 @@
 
             </div>
             </div>
+        <!--Топ меню-->
         <div class="row">
-            <div class="col-md-12 ">
+            <div class="col-md-12 col-xs-12 col-sm-12">
             <!--Меню-->
             <?if(isset($menu_top)):?>
            <?foreach($menu_top as $menu_top):?>

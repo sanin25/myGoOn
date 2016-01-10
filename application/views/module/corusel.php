@@ -9,19 +9,61 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-        <img src="/media//img/corusel/1.jpg" alt="...">
+        <img src="/media//img/snitin/snitin.jpg" alt="...">
       <div class="carousel-caption">
         .dfdgrgrg
       </div>
     </div>
        <div class="item ">
-        <img src="/media//img/corusel/2.jpg" alt="...">
+        <img src="/media//img/snitin/snitin-1.jpg" alt="...">
       <div class="carousel-caption">
         .dfdgrgrg
       </div>
     </div>
       <div class="item ">
-          <img src="/media//img/corusel/3.jpg" alt="...">
+          <img src="/media//img/snitin/snitin-3.jpg" alt="...">
+          <div class="carousel-caption">
+              .dfdgrgrg
+          </div>
+      </div>
+       <div class="item ">
+          <img src="/media//img/snitin/snitin-4.jpg" alt="...">
+          <div class="carousel-caption">
+              .dfdgrgrg
+          </div>
+      </div>
+       <div class="item ">
+          <img src="/media//img/snitin/snitin-5.jpg" alt="...">
+          <div class="carousel-caption">
+              .dfdgrgrg
+          </div>
+      </div>
+       <div class="item ">
+          <img src="/media//img/snitin/snitin-6.jpg" alt="...">
+          <div class="carousel-caption">
+              .dfdgrgrg
+          </div>
+      </div>
+       <div class="item ">
+          <img src="/media//img/snitin/snitin-7.jpg" alt="...">
+          <div class="carousel-caption">
+              .dfdgrgrg
+          </div>
+      </div>
+       <div class="item ">
+          <img src="/media//img/snitin/snitin-8.jpg" alt="...">
+          <div class="carousel-caption">
+              .dfdgrgrg
+          </div>
+      </div>
+       <div class="item ">
+          <img src="/media//img/snitin/snitin-9.jpg" alt="...">
+          <div class="carousel-caption">
+              .dfdgrgrg
+          </div>
+      </div>
+       <div class="item ">
+          <img src="/media//img/snitin/snitin-10.jpg" alt="...">
           <div class="carousel-caption">
               .dfdgrgrg
           </div>

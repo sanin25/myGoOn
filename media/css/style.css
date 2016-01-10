@@ -107,7 +107,7 @@ html, body {
         
 }
 #nav > li{
-	 z-index: 5;
+	z-index: 5;
 	position:relative;
 	display:block;
 	float: left;
@@ -155,11 +155,13 @@ html, body {
 #nav ul li{
 	padding-top:10px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
 	float:none;
+	display:block;
+	width: 100%;
 	
 }
 #nav ul a{
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
-	display:block;
+	
 }
 #nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
 	left:0; /* Приносим его обратно на экран, когда нужно */
@@ -180,6 +182,8 @@ html, body {
     border-radius: 0 20px 20px 20px; 
     background:#d1ca6f;
     color:#FFFFFF;
+    text-align: center;
+    width: 500px;
 }
 .menu-top{
     width:75%;

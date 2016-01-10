@@ -6,7 +6,7 @@ class Controller_Index_Page extends Controller_Index{
             {
                  $href = $this->request->param('path');
                 
-                $pages = ORM::factory('page')->where('href', '=',$href);
+                $pages = ORM::factory('page')->where('href', '=',$href)->find();
                   
                   if($pages->act == 0)
                       {

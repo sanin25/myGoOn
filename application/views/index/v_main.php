@@ -47,8 +47,7 @@
            
             </div>
             </div>
-       
-        <div class="left"></div>
+        
         <div class="center">
            
             <?if(isset($center)):?>

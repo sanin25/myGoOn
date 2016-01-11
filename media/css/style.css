@@ -1,4 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
+#cep{
+	display: block;
+	z-index: 1;
+}
+#cep img{
+	
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	margin: -12px 0px 0px 44px;
+	
+	
+}
 .glyphicon-chevron-left:before {
     content: "" !important;
 }
@@ -30,10 +43,7 @@
 }
 .carousel{
     margin: 0px;
-
-
-
-   
+ 
 }
 
  
@@ -70,7 +80,7 @@ html, body {
 }
 .ptic{
  position: absolute;
-  margin: 121px 0px 0px -95px;
+  margin: 127px 0px 0px -95px;
     z-index: 2;
 }
 
@@ -88,49 +98,38 @@ html, body {
 /*------------------------------------*\
 	НАВИГАЦИЯ
 \*------------------------------------*/
-#nav{
-    font-size: 20px;
-	float:left;
-	width:100%;
+#topmenu{
 	list-style:none;
-	font-weight:bold;
-	margin-bottom:10px;
-         /*-webkit-box-shadow: 0px 0px 0px -5px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.75);
-        border-radius: 12px 12px 12px 12px;
-        -moz-border-radius: 12px 12px 12px 12px;
-        -webkit-border-radius: 12px 12px 12px 12px;*/
-        border-bottom:  1px solid rgba(99, 206, 18, 0.83);
-        display: block;
-       
-        
+       width: 2600px;
 }
+
 #nav > li{
-	z-index: 5;
-	position:relative;
-	display:block;
+	position: relative;
+	border: 2px solid #fff;
+	z-index: 2;
 	float: left;
 	margin: 0 8px 0 0;
-    background: #d1ca6f;
 	-moz-border-radius:0 20px 20px 20px;
     -webkit-border-radius: 0 20px 20px 20px;
     border-radius: 0 20px 20px 20px; 
-	-webkit-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.24);
-	-moz-box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.24);
-	box-shadow: 0px 0px 47px 3px rgba(0,0,0,0.24);
+    background: #3a611a;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#3a611a),color-stop(1,#729e31));
+    background: -ms-linear-gradient(bottom,#3a611a,#729e31);
+    background: -moz-linear-gradient(center bottom,#3a611a 0%,#729e31 100%);
+    background: -o-linear-gradient(#729e31,#3a611a);
 	
 }
-#nav li a{
-	display:block;
-    padding: 3px 20px 3px 20px;
-	color:#509156;
-	text-decoration:none;
+#nav  li  a{
 	font-family:  'Bad Script', cursive;
-
-
-
-	
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	display:block;
+    padding: 8px 20px 5px 20px;
+	color: #FFFFFF;;
+	text-decoration:none;
+ 	z-index: 2;
+ 	position: relative;
 }
 #nav li a:hover{
     -moz-border-radius:0 20px 20px 20px;
@@ -138,8 +137,8 @@ html, body {
     border-radius: 0 20px 20px 20px; 
     background:#ebdb2c;
     color:#FFFFFF;
-
-        
+    position: relative;
+ 
 }
 
 /*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
@@ -154,14 +153,12 @@ html, body {
 }
 #nav ul li{
 	padding-top:10px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
-	float:none;
-	display:block;
-	width: 100%;
+	list-style-type: inherit;
 	
 }
 #nav ul a{
 	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
-	
+	font-size: 10px;
 }
 #nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
 	left:0; /* Приносим его обратно на экран, когда нужно */
@@ -169,27 +166,36 @@ html, body {
 	margin: 0px 0px 0px -50px;
 }
 #nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
-	
+	 border: 2px solid;
+	 background: #3a611a;
+	 background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#3a611a),color-stop(1,#729e31));
+	 background: -ms-linear-gradient(bottom,#3a611a,#729e31);
+	 background: -moz-linear-gradient(center bottom,#3a611a 0%,#729e31 100%);
+	 background: -o-linear-gradient(#729e31,#3a611a);
+	 -moz-border-radius:0 20px 20px 20px;
+	 -webkit-border-radius: 0 20px 20px 20px;
+	 border-radius: 0 20px 20px 20px; 
 }
 #nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
 	text-decoration:none;
 	-webkit-transition:-webkit-transform 0.075s linear;
+}
+#nav ul li{
+	position: relative;
+	z-index: 5;
 }
 #nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
     
     -moz-border-radius:0 20px 20px 20px;
     -webkit-border-radius: 0 20px 20px 20px;
     border-radius: 0 20px 20px 20px; 
-    background:#d1ca6f;
+    background:#3a611a;
     color:#FFFFFF;
-    text-align: center;
-    width: 500px;
-}
-.menu-top{
-    width:75%;
-    margin: 288px -128px 0 0;
-    float: right;
-    padding: 5;
+
+    -webkit-box-shadow: 0px 0px 83px 0px rgba(102,153,51,1);
+    -moz-box-shadow: 0px 0px 83px 0px rgba(102,153,51,1);
+    box-shadow: 0px 0px 83px 0px rgba(102,153,51,1);
+
 }
 .center{
       width:70%;

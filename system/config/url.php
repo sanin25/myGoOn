@@ -7,8 +7,8 @@ return array(
 		//
 		// Example:
 		//
-		'koh\.ru',
-        '.*\.koh\.ru',
+		//'koh\.ru',
+        //'.*\.koh\.ru',
 		//
 		// Do not forget to escape your dots (.) as these are regex patterns.
 		// These patterns should always fully match,
